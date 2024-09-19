@@ -4,52 +4,72 @@
     margin: 0;
     padding: 0;
     background-color: white;
-    }
-    
-    .navbar {
-        background-color: #15293F !important;
-    }
-    
-    .navbar-toggler {
-        background-color: white;
-    }
+}
 
-    .navbar-nav .nav-link {
-        color: white !important;
-    }
+.navbar {
+    background-color: transparent !important;
+    transition: background-color 0.5s ease;
+}
 
-    .navbar-brand {
-        color: white;
-    } 
+.navbar-toggler {
+    background-color: white;
+}
 
-    .blur-background {
-        filter: blur(5px);
-        transition: filter 0.5s ease;
-    }
+.navbar-nav .nav-link {
+    color: white !important;
+}
 
-    #overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 1000;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 2s ease;
-    }
+.navbar-brand {
+    color: white;
+}
 
-    #overlay.show {
-        visibility: visible;
-        opacity: 1;
-    }
+.blur-background {
+    filter: blur(5px);
+    transition: filter 0.5s ease;
+}
 
-    #welcome-text {
-        font-size: 2.5rem;
-        color: white;
-        z-index: 1100;
-    }
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease-in-out;
+}
+
+#overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#welcome-text {
+    font-size: 2.5rem;
+    color: white;
+    z-index: 1100;
+}
+
+main {
+    background-image: url('images/unnamed-7-819x1024.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 200vh;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar.scrolled {
+    background-color: #15293f !important;
+}
