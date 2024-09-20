@@ -7,8 +7,9 @@
 }
 
 .navbar {
-    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
     transition: background-color 0.5s ease;
+    border-radius: 0 0 15px 15px;
 }
 
 .navbar-toggler {
@@ -60,16 +61,49 @@ main {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    min-height: 200vh;
+    min-height: 300vh;
+    padding-top: 60px;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-.navbar.scrolled {
-    background-color: #15293f !important;
+.arrow-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.arrow {
+    width: 0px;
+    height: 0px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid white;
+    animation: arrow-bounce 2s infinite;
+}
+
+@keyframes arrow-bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
 }
