@@ -15,33 +15,29 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <button class="btn logo-button" type="button">
+        <a href="#" class="btn logo-button">
           <img src="images/kean logo.png" alt="logo button">
-        </button>
+        </a>
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#contact-info">Hidden brand</a>
+          <a class="navbar-brand" href="#contact-info">Contact info</a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#mission-values">Mission & Values</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#student-life">Student Life</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#alumni-success">Alumni Success</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -52,42 +48,97 @@
       <h1 id="welcome-text"> Welcome! </h1>
     </div>
     <!-- Close Welcome Screen-->
-    <div class="arrow-container">
-      <div class="arrow"></div>
-    </div>
-    <!-- Map -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <div class="map-container">
-            <div class="map-box">
-              <div id="embed-map-canvas">
-                <iframe class="map-iframe" frameborder="0"
-                  src="https://www.google.com/maps/embed/v1/place?q=Kean+University+-+Main+Campus,+Morris+Avenue,+Union,+NJ,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                </iframe>
-              </div>
+    <section id="kean-logo" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="text-center">
+              <img src="images/Kean_Seal-2018.png" alt="Kean Logo" class="img-fluid mb-4">
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Map end-->
-
-    <!-- contact information -->
-    <div class="row justify-content-center mt-4" id="contact-info">
-      <div class="col-12 col-md-8 col-lg-6">
-        <div class="contact-info">
-          <h2>Contact information</h2>
-          <p><strong>Address:</strong> 1000 Morris Ave, Union, NJ 07083, USA</p>
-          <p><strong>Phone:</strong><a href="tel: +1 (908) 737-5326">+1 (908) 737-5326</a></p>
-          <p><strong>Email:</strong> <a href="mailto:admissions@kean.edu">admissions@kean.edu</a></p>
-          <p><strong>Office Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM</p>
+    </section>
+    <!--Image carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/keanalumni.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/keancampus.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/keanbackground.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!-- End contact info -->
+    <!-- End image carousel-->
+    <!-- Start values section -->
+    <section id="mission-values" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="info-box">
+              <h2>Kean University Mission & Values </h2>
+              <p>Kean University is committed to providing a world-class eduaction that prepares students for meaningful
+                careers and lives. We value academic excellence, leadership, equity, and service to the community. Our
+                mission is to foster critical thinking, innocation, and ethical leadership among our students while
+                promoting diversity and inclusion</p>
+              <p>
+                We believe in empowering students to become lifelong learners and global citizens who are prepared to
+                meet the challenges of an evolving society.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End section-->
+    <!-- Start majors section-->
+    <section id="academic-programs" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="info-box">
+              <h2>
+                Academic Programs
+              </h2>
+              <p>Kean Univeristy offers a wide range of undergraduate majors and programs, including: </p>
+              <ul>
+                <li>Business Asministration</li>
+                <li>Computer Science</li>
+                <li>Biology</li>
+                <li>Psychology</li>
+                <li>Education</li>
+                <li>Nursing</li>
+                <li>Graphic Design</li>
+                <li>Public Administration</li>
+                <li>Criminal Justice</li>
+                <li>Communication</li>
+                <li>Environmental Science</li>
+              </ul>
+              <p>Explore more programs <a href="https://www.kean.edu/academics">here</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- start student info -->
-    <section id="student-life" class="py-5 bg-light">
+    <section id="student-life" class="py-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8">
@@ -107,15 +158,75 @@
                 <li>Campus events, including concerts, theater performances, and cultural festivals</li>
                 <li>Leadership opportunities through student government and peer mentoring</li>
               </ul>
-              <p>Kean also provides ample support services to help students succeed academically and personally, such as tutoring, career services, and wellness programs.</p>
+              <p>Kean also provides ample support services to help students succeed academically and personally, such as
+                tutoring, career services, and wellness programs.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- End student life section -->
+    <!-- Start alumni success -->
+    <section id="alumni-success" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="info-box">
+              <h2>Alumni Success</h2>
+              <p>
+                Kean University graduates have gone on to excel in their fields and make a positive impact in their
+                communities. Our alumni network is strong, with graduates working in a variety of industries, including
+                education, business, healthcare, and technology.
+              </p>
+              <p>
+                Notable alumni include:
+              </p>
+              <ul>
+                <li>Carla Harris - Vice Chairman at Morgan Stanley</li>
+                <li>Tommy Franks - Retried U.S. Army General</li>
+                <li>Judy McGrath - Former CEO of MTV Networks</li>
+              </ul>
+              <p>
+                Our graduate are well-equipped to thrive in their careers thanks to Kean's focus on experiential
+                learning, internships, and real-world problem solving.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--End alumni success -->
   </main>
   <footer>
-    <!-- place footer here -->
+    <!-- Map -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="map-container">
+            <div class="map-box">
+              <div id="embed-map-canvas">
+                <iframe class="map-iframe" frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?q=Kean+University+-+Main+Campus,+Morris+Avenue,+Union,+NJ,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Map end-->
+     <!-- contact information -->
+     <div class="row justify-content-center mt-4" id="contact-info">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="contact-info">
+          <h2>Contact information</h2>
+          <p><strong>Address:</strong> 1000 Morris Ave, Union, NJ 07083, USA</p>
+          <p><strong>Phone:</strong><a href="tel: +1 (908) 737-5326">+1 (908) 737-5326</a></p>
+          <p><strong>Email:</strong> <a href="mailto:admissions@kean.edu">admissions@kean.edu</a></p>
+          <p><strong>Office Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <!-- End contact info -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById('overlay');
     const mainContent = document.querySelector('main');
     const navbar = document.querySelector('nav');
-    const arrowContainer = document.querySelector('.arrow-container');
 
     overlay.classList.add('show');
     navbar.classList.add('blur-background');
@@ -15,15 +14,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const arrowContainer = document.querySelector('.arrow-container');
-
-
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 100) {
-            arrowContainer.classList.add('hide');
-        } else {
-            arrowContainer.classList.remove('hide');
-        }
-    });
-});

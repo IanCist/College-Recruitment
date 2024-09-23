@@ -1,9 +1,11 @@
 .logo-button img {
     width: 80px;
     height: 80px;
-    margin: 0;
-    padding: 0;
     background-color: white;
+}
+
+.logo-button {
+    border: none;
 }
 
 .navbar {
@@ -62,7 +64,7 @@ main {
     background-position: center center;
     background-repeat: no-repeat;
     min-height: 300vh;
-    padding-top: 60px;
+    padding-top: 200px;
 }
 
 body,
@@ -73,35 +75,6 @@ html {
     overflow-x: hidden;
 }
 
-.arrow-container {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.arrow {
-    width: 0px;
-    height: 0px;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 25px solid white;
-    animation: arrow-bounce 2s infinite;
-}
-
-@keyframes arrow-bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-}
 
 .hide {
     opacity: 0;
@@ -175,9 +148,65 @@ position: relative;
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
-#contact-info {
-    padding-top: 150px; 
-    margin-top: -100px; 
+
+.info-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.info-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: navy;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+#academic-programs ul,
+#student-life ul,
+#alumni-success ul {
+    padding-left: 20px;
+}
+
+#academic-programs ul li,
+#student-life ul li,
+#alumni-success ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+#kean-logo {
+margin-top: -90px;
+}
+
+.carousel {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.caorusel-item img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
